@@ -1,0 +1,10 @@
+{
+  "name": "MICRO ANALYSIS",
+  "description": "Professional Microbiology Platform for Petri plate colony analysis, AI-powered questions, study resources, and laboratory techniques.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

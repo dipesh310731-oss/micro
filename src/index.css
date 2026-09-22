@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  --primary-deep: #4A154B;
+  --primary-purple: #6B21A8;
+  --secondary-pink: #EC4899;
+  --bg-lavender: #FAF7FD;
+  --text-charcoal: #1E1E24;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF7FD;
+  color: #1E1E24;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* Custom scrollbar for mobile/desktop containers */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3E8FF;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8B4FE;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C084FC;
+}
+
+/* Print styling for laboratory reports */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-report, #printable-report * {
+    visibility: visible;
+  }
+  #printable-report {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: white;
+    color: black;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+
